@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hearts" id="hearts"></div>
+
+    <main class="container">
+
+        <!-- Welcome Page -->
+        <section id="welcome" class="page active">
+            <div class="big-heart">❤️</div>
+            <h1>ချစ်ကလေးရေ...</h1>
+            <p>ကိုကိုပြောချင်တဲ့ စကားလေးတွေရှိတယ် 💗</p>
+            <button onclick="startWebsite()">ဖွင့်ကြည့်ပါ 💌</button>
+        </section>
+
+        <!-- Envelope Page -->
+        <section id="envelopePage" class="page">
+            <h2>ကိုကို့ဆီက စာလေးတစ်စောင် 💌</h2>
+            <p>စာအိတ်လေးကို နှိပ်ကြည့်ပါနော်</p>
+
+            <div class="envelope" id="envelope"
+                 onclick="openLetter()">
+                <div class="envelope-back"></div>
+                <div class="letter-icon">💌</div>
+                <div class="envelope-front"></div>
+                <div class="envelope-flap"></div>
+            </div>
+        </section>
+
+        <!-- Love Letter Page -->
+        <section id="letterPage" class="page">
+            <div class="letter-card">
+                <div class="letter-decoration">🌷 💗 🌷</div>
+                <h2>ချစ်ဆုံးလေးသို့ ❤️</h2>
+
+                <div id="letterText" class="letter-text"></div>
+
+                <div class="signature">
+                    ချစ်ကလေးရဲ့ 💓💓<br>
+                    ကိုကို
+                </div>
+
+                <button id="continueBtn" class="hidden"
+                        onclick="showProposal()">
+                    ဆက်ကြည့်မယ် ❤️
+                </button>
+            </div>
+        </section>
+
+        <!-- Proposal Page -->
+        <section id="proposalPage" class="page">
+            <div class="big-heart">💗</div>
+            <h1>ချစ်ကလေးရေ...</h1>
+            <p class="proposal-text">
+                နောင်နှစ်ပေါင်းများစွာအထိ
+                ကိုကိုနဲ့အတူတူ လက်တွဲသွားချင်သေးလား? 🥺
+            </p>
+
+            <div class="buttons">
+                <button onclick="sayYes()">စိတ်တူပါတယ် ❤️</button>
+                <button class="maybe" onclick="sayMaybe()">
+                    အချိန်ယူချင်တယ် 😊
+                </button>
+            </div>
+
+            <p id="answer" class="answer"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        Made with Love ❤️
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
